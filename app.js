@@ -8,6 +8,7 @@ const p1 = document.createElement('p');
 const p2 = document.createElement('p');
 first.append(p1);
 first.append(p2);
+// 1a
 const oneAJSON = `{"id":18,"type":"programming","setup":"Why did the programmer quit his job?","punchline":"Because he didn't get arrays."}`;
 const jokeJS1 = JSON.parse(oneAJSON);
 console.log(jokeJS1);
