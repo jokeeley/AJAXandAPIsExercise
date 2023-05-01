@@ -74,3 +74,21 @@ async function tvMazeFunc() {
     }
 }
 tvMazeFunc()
+
+// BONUS
+// 5
+const img = document.createElement('img')
+const body = document.querySelector('body')
+
+async function pika() {
+    try {
+        const pikaPic = await axios.get('https://pokeapi.co/api/v2/pokemon/pikachu')
+        console.log(pikaPic);
+        img.src = pikaPic.data.sprites.front_shiny
+        body.append(img)
+        console.log('Bonus question was successful');
+    } catch (err) {
+        console.log('bonus question failed to GET');
+        console.log(err);
+    }
+}
